@@ -12,17 +12,18 @@ L’objectif est de concevoir un **agent intelligent** qui apprend à ajuster la
 
 ## 🏗️ Technologies utilisées
 - **Python** 🐍
-- **Gym OpenAI** (Simulation de l’environnement Lunar Lander)
-- **Bibliothèques IA** : TensorFlow, PyTorch
-- **Algorithmes RL** : Q-learning, DQN, PPO
-- **Visualisation des performances** : Matplotlib, Seaborn
+- **Gymnasium** (Simulation de l’environnement Lunar Lander, remplaçant Gym OpenAI)
+- **NumPy** (Manipulation des données et calculs matriciels)
+- **Matplotlib** (Visualisation des performances)
+- **PIL (Python Imaging Library)** (Gestion des images et des vidéos)
+- **IPython Display** (Affichage interactif des résultats)
+- **Time** (Gestion des délais et timing d’exécution)
+- **Swig** (Outil pour interfacer C/C++ avec Python, nécessaire pour certaines dépendances)
 
 ## ⚙️ Algorithmes utilisés
 L’IA apprend en interagissant avec l’environnement et en recevant des **récompenses** selon ses actions. Nous utilisons les algorithmes suivants :
 
-1. **Q-learning** : Apprentissage tabulaire basé sur des valeurs d'état-action.
-2. **DQN (Deep Q-Network)** : Utilisation d’un réseau de neurones pour approximer la fonction de valeur Q.
-3. **PPO (Proximal Policy Optimization)** : Algorithme avancé pour stabiliser l’apprentissage de l’agent.
+1. **Q-learning** : Apprentissage tabulaire basé sur des valeurs d'état-action, amélioré avec l’algorithme de **Tile Coding (Tiling)** pour mieux représenter un espace d’états continus.
 
 ## 📊 Résultats attendus
 L'agent doit être capable de :
